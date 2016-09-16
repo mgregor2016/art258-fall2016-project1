@@ -155,7 +155,52 @@ background-image:         linear-gradient(to bottom, #71a7d9, #d292e7);
 }
 .orange {
 	background-color: #ea6300;
-}*/
+}
+
+@media screen and (min-width: 300px) {
+  p {
+    /*background: #990000;8*/
+    font-size: 1rem;
+  }
+  h1{
+
+    font-size:.5rem;
+  }
+  section {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width:100%;
+    padding-top:5px;
+    font-size: .5rem;
+  }
+}
+  @media screen and (min-width: 500px) {
+    p {
+      /*background: #990000;8*/
+      font-size: 1.5rem;
+      color:yellow;
+    }
+    h1{
+
+      font-size:1rem;
+    }
+    section {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: blue;
+      width:100%;
+      padding-top:5px;
+      font-size: .5rem;
+    }
+}
+
 /*.boxes{
  justify-content: center;
 
