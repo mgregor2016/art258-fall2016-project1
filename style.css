@@ -1,0 +1,237 @@
+/*
+	Demo Styles: NOT REQUIRED
+*/
+html,
+body
+{
+  margin: 0;
+  height: 100%;
+
+  animation: colorchange 50s infinite;
+   -moz-animation:colorchange 50s infinite; /* Firefox */
+    -webkit-animation:colorchange 50s infinite; /* Safari and Chrome */
+  /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 50s infinite; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange
+    {
+
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+
+    }
+
+}
+/*nav{
+padding-top: 40px;
+}*/
+main {
+  margin: 0 auto;
+  width:100%;
+  padding: 10px;
+
+}
+.content{
+  padding-top:  <linl rel="stylesheet" href="style.css">px;
+  /*float:left;
+  clear:left;*/
+  display:flex;
+  /*border: 3px solid blue;*/
+  width:90%;
+
+}
+div{
+  display:flex;
+  width:32%;
+  padding-right:5px;
+}
+#1{
+  width:33%;
+}
+
+.column-2{
+width:33%;
+display:block;
+
+}
+#3{
+  width:33%;
+}
+img{
+  background:black;
+  border: 1px solid red;
+  /*display:inline-block;*/
+  padding;15px;
+  -webkit-filter: blur(15px); /* Chrome, Safari, Opera */
+    filter: blur(15px);
+  transition-property: all;
+  transition-duration:500ms;
+
+}
+img:hover{
+  background:black;
+  border: 1px solid red;
+  /*display:inline-block;*/
+  padding;15px;
+  -webkit-filter: blur(0px); /* Chrome, Safari, Opera */
+    filter: blur(0px);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding-left:1em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+a.active {
+  color: red;
+  text-decoration: underline;
+}
+
+h1,
+p {
+  margin: 0;
+  padding-left:17px;
+  color:white;
+
+  line-height: 1.4;
+  font-size:1.25em;
+
+
+  font-family: 'Slabo 27px', serif;
+  letter-spacing: .1rem;
+
+}
+
+header {
+  margin: 0 auto;
+  width:80%;
+  top: 10px;
+  padding-left:5px;
+  position:fixed;
+}
+
+section {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  width:100%;
+  padding-top:10px;
+}
+
+.full-screen {
+  height: 100%; /* makes panels the entire window height */
+}
+
+/*.white {
+	background-color: #71a7d9; /*top colour
+background-image: -webkit-linear-gradient(top, #71a7d9, #d292e7);
+background-image:    -moz-linear-gradient(top, #71a7d9, #d292e7);
+background-image:      -o-linear-gradient(top, #71a7d9, #d292e7);
+background-image:         linear-gradient(to bottom, #71a7d9, #d292e7);
+}*/
+.red {
+	background-color: #cf3535;               background:rgba(0,0,0,0.4);
+}
+.orange {
+	background-color: #ea6300;
+}*/
+/*.boxes{
+ justify-content: center;
+
+
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 1px solid silver;
+ -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  height:50%;
+
+}
+
+
+
+.wrap    {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+
+}
+.wrap li {
+  background: gold;
+
+
+/*  padding-bottom:100px;*/
+}
+.flex-item{
+  background: grey;
+  padding: 1px 5px 4px 5px;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+
+
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  float:left;
+ }
+
+li:first-child{
+
+  width:10%;
+  height:90%;
+}
+
+li:nth-child(2){
+   width:15%;
+   height:20%;
+}
+
+li:nth-child(3){
+   width:5%;
+   height:76%;
+ }
+
+li:nth-child(4){
+   width:45%;
+   height:16%;
+   align-self:flex-end;
+ }
+
+/*#2{
+  width:300px;
+  height:500px;
+}*/
